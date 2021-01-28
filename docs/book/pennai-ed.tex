@@ -1,0 +1,39 @@
+\documentclass[paper=a4,fontsize=12pt,draft=true,chapterprefix=true]{scrbook}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{cite}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{amsfonts}
+\usepackage{fancyvrb}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{footnote} % WARNING: Must go AFTER xcolor
+
+\graphicspath{ {figures/} }
+\allsectionsfont{\singlespacing}
+\setkomafont{pagehead}{\normalfont\small\normalcolor\bfseries\sffamily}
+
+\font\ninerm=cmr9
+\let\mc=\ninerm
+
+\def\title{Learning Artificial Intelligence with PennAI}
+\def\author{The PennAI Development Team} % replace with names
+
+\pagestyle{scrheadings}
+\automark[chapter]{chapter}
+\automark*[section]{section}
+\ihead{\thesection}
+\ohead{\headmark}
+\chead{}
+
+\begin{document}
+\normalsize
+\input{00_frontmatter}
+\input{01_introduction}
+
+%\input{98_bibliography}
+%\input{99_backmatter}
+\end{document}
